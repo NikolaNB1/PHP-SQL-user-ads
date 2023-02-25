@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         $statement = $connection->prepare($sql);
         $statement->execute();
 
-        header('Location: create_new_profile.php');
+        header('Location: index.php');
     }
 }
 ?>
@@ -29,8 +29,6 @@ if (isset($_POST['submit'])) {
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" href="favicon.ico">
     <title>Vivify Blog 2 - Create profile</title>
 
 </head>

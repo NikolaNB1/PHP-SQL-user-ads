@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: sans-serif;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "georgia", serif;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.container {
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+.site-logo {
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.site-logo:hover {
+  color: darkorange;
+  text-decoration: none;
+}
+
+.site-logo strong {
+  color: darkorange;
+}
+.nav {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.nav a {
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  border-radius: 0.3rem;
+}
+.nav a:hover {
+  background-color: #dfdfdf;
+  text-decoration: none;
+}
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: #999;
+  border-top: 1px solid #f3f3f3;
+}
+.footer a {
+  color: #ccc;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.article > header {
+  margin-bottom: 1rem;
+}
+
+.article + .article {
+  margin-top: 2rem;
+}
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.paginator a {
+  padding: 0.5rem;
+}
+.form-group + .form-group {
+  margin-top: 1rem;
+}
+.control-label {
+  display: block;
+  color: #999;
+}
+.form-control {
+  display: block;
+  width: 25%;
+  padding: 0.5rem;
+  min-height: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+}
+ul {
+  list-style-type: none;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: #666;
+  font-size: 0.9rem;
+  cursor: pointer;
+  vertical-align: baseline;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #069;
+  border-color: #036;
+}
+
+.btn--primary:hover {
+  background-color: #036;
+}
+.ads {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

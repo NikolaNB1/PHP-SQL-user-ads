@@ -34,31 +34,33 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vivify Blog 2 - Create user</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <?php include("header.php"); ?>
-    <h1>Create new user</h1>
-    <form action="create_new_user.php" method="POST" id="usersForma">
+    <form class="container" action="create_new_user.php" method="POST" id="usersForma">
+        <h1>Create new user</h1>
         <ul>
-            <li>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter email">
+            <li class="form-group">
+                <label for="email" class='control-label'>Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" class='form-control'>
             </li>
-            <li>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter password">
+            <li class='form-group'>
+                <label for="password" class='control-label'>Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" class='form-control'>
             </li>
-            <li>
-                <label for="role">Role</label>
-                <input type="text" name="role" id="role" placeholder="Enter role"><br>
+            <li class="form-group">
+                <label for="role" class='control-label'>Role</label>
+                <input type="text" name="role" id="role" placeholder="Enter role" class='form-control'>
             </li>
-            <button type="submit" name="submit">Submit</button>
+            <li class="form-group">
+                <button type="submit" name="submit" class='btn btn--primary'>Submit</button>
             </li>
         </ul>
     </form>
-
+    <?php include('footer.php'); ?>
 </body>
 
 </html>

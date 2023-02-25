@@ -12,11 +12,11 @@ include("pdo.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivify Blog 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <?php include("header.php"); ?>
-    <h1>Welcome</h1>
     <?php
     $sql = "SELECT users.email, p.* FROM posts AS p
             INNER JOIN users ON users.id = p.user_id
@@ -30,7 +30,7 @@ include("pdo.php");
     <?php
     foreach ($posts as $post) {
     ?>
-        <article>
+        <article class="article">
             <header>
                 <h1><a href="update_ad.php<?php echo ($post['id']) ?>">
                         <?php echo ($post['title']) ?></a></h1>
@@ -43,9 +43,10 @@ include("pdo.php");
     <?php
     }
     ?>
-    <div>
-        <a href="all-posts.php" title="All posts">All posts</a>
+    <div class="paginator">
+        <a href="list_ads.php" title="All ads">All ads</a>
     </div>
+    <?php include('footer.php'); ?>
 </body>
 
 </html>

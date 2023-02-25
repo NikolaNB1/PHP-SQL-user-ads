@@ -13,6 +13,7 @@ include('pdo.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivify Blog 2 - All ads</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -26,11 +27,13 @@ include('pdo.php');
     $statement->setFetchMode(PDO::FETCH_ASSOC);
     $posts = $statement->fetchAll();
     ?>
-
+    <div class='ads'>
+        <h1>All ads</h1>
+    </div>
     <?php
     foreach ($posts as $post) {
     ?>
-        <article>
+        <article class='article'>
             <header>
                 <h1><a href="update_ad.php<?php echo ($post['id']) ?>">
                         <?php echo ($post['title']) ?></a></h1>
@@ -43,7 +46,7 @@ include('pdo.php');
     <?php
     }
     ?>
-
+    <?php include('footer.php'); ?>
 </body>
 
 </html>

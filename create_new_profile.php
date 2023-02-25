@@ -30,40 +30,41 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vivify Blog 2 - Create profile</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <?php include("header.php"); ?>
-    <h1>Create new profile</h1>
-    <form action="create_new_profile.php" method="POST" id="profilesForma">
+    <form class="container" action="create_new_profile.php" method="POST" id="profilesForma">
+        <h1>Create new profile</h1>
         <ul>
-            <li>
-                <label for="first_name">First name</label>
-                <input type="text" id="first_name" name="first_name" placeholder="Enter first name">
+            <li class="form-group">
+                <label for="first_name" class='control-label'>First name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter first name" class='form-control'>
             </li>
-            <li>
-                <label for="last_name">Last name</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Enter last name">
+            <li class="form-group">
+                <label for="last_name" class='control-label'>Last name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter last name" class='form-control'>
             </li>
-            <li>
-                <label for="date_of_birth">Date of birth</label>
-                <input type="date" name="date_of_birth" id="date_of_birth"><br>
+            <li class="form-group">
+                <label for="date_of_birth" class='control-label'>Date of birth</label>
+                <input type="date" name="date_of_birth" id="date_of_birth" class='form-control'>
             </li>
-            <li>
-                <label for="country">Country</label>
-                <input type="text" placeholder="Enter country" name="country" id="country"><br>
+            <li class="form-group">
+                <label for="country" class='control-label'>Country</label>
+                <input type="text" placeholder="Enter country" name="country" id="country" class='form-control'>
             </li>
-            <li>
-                <label for="profession">Profession</label>
-                <input type="text" placeholder="Enter profession" name="profession" id="profession"><br>
+            <li class="form-group">
+                <label for="profession" class='control-label'>Profession</label>
+                <input type="text" placeholder="Enter profession" name="profession" id="profession" class='form-control'>
             </li>
-            <li>
-                <button type="submit" name="submit">Submit</button>
+            <li class="form-group">
+                <button type="submit" name="submit" class='btn btn--primary'>Submit</button>
             </li>
         </ul>
     </form>
-
+    <?php include('footer.php'); ?>
 </body>
 
 </html>

@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
         $statement->execute();
         $statement->setFetchMode(PDO::FETCH_ASSOC);
         $user = $statement->fetch();
-        $_SESSION["user_id"] = $user['id'];
+        $_SESSION["user_id"] = $user->id;
 
         header('Location: create_new_profile.php');
     }

@@ -7,6 +7,6 @@
         <a href="create_new_user.php" title="Create user">Create user</a>
         <a href="create_new_profile.php" title="Create profile">Create profile</a>
         <a href="create_new_ad.php" title="Create ad">Create ad</a>
-        <!-- <a href="profile.php" title="Profile">Profile</a> -->
+        <a href="list_ads.php" title="All ads">All ads</a>
     </nav>
 </header>
